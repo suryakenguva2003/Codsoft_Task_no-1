@@ -1,0 +1,303 @@
+p{
+    margin:0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    cursor: pointer;
+}
+body{
+    font-family: 'Saira', sans-serif;
+    height:4380px;
+    overflow-x: hidden;
+}
+main{
+    margin-left: 320px;
+}
+.l-section{
+    position: fixed;
+    width:18vw;
+    left:0;
+    top:0;
+    bottom:0;
+    background-color: rgb(255, 68, 68);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.l-one{
+    margin-bottom: 20px;
+    flex:0.23;
+}
+.profile-pic{
+    width:130px;
+    height:130px;
+    border-radius: 65px;
+    box-shadow: 0 0 15px 0.5px;
+    border-color: white;
+    border-style: solid;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.profile-pic:hover{
+    transform: scale(1.1);
+}
+.l-two{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex:0.38;
+}
+.options{
+    letter-spacing: 1.5px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: letter-spacing 0.5s;
+    color:rgb(223, 220, 220)
+}
+.options:hover{
+    letter-spacing: 4px;
+    color:white;
+}
+.name{
+    color:rgb(49, 49, 49);
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: -15px;
+}
+.my-name{
+    color:rgb(255, 68, 68);
+}
+.address{
+    color:rgb(106, 105, 105);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:100vh;
+    margin-right: 80px;
+}
+.description{
+    color:rgb(106, 105, 105);
+    font-size :18px;
+    margin-bottom: 40px;
+}
+.social{
+    display: flex;
+    width:20vw;
+    justify-content: space-between;
+}
+.social-logo{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    cursor:pointer;
+    transition:transform 0.8s;
+}
+.social-logo:hover{
+    transform: scale(1.5);
+}
+.internship,.education,.skills,.interests,.certifications{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:100vh;
+}
+.internship h1,.education h1,.skills h1,.interests h1,.certifications h1{
+    font-size: 50px;
+    color:rgb(49,49,49);
+}
+.internship h2,.education h2{
+    font-size: 30px;
+}
+.internship h3,.education h3,.skills h3{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: -20px;
+    color:gray;
+}
+.internship p,.education p,.interests p,.certifications li{
+    color:rgb(106, 105, 105);
+    width:70vw;
+}
+.s-images{
+    display:flex;
+    justify-content: space-between;
+    width:50vw;
+    margin-top: 10px;
+}
+.s-images img{
+    width:60px;
+    cursor:pointer;
+    transition: transform 0.5s;
+}
+.s-images img:hover{
+    transform: scale(1.5);
+}
+.certifications ul{
+    list-style-type:square;
+}
+.certifications ul li{
+    transition: margin-left,transform 0.8s;
+    margin-bottom: 10px;
+}
+.certifications ul li:hover{
+    margin-left: 200px;
+    transform: scale(1.5);
+    color:rgb(255, 68, 68)
+}
+.line-1,.line-2,.line-3,.line-4,.line-5{
+    border-top: 1px solid gray;
+    width:100%;
+    position: absolute;
+    top:730px;
+    left:265px
+}
+.line-2{
+    top:1460px;
+}
+.line-3{
+    top:2190px;
+}
+.line-4{
+    top:2920px;
+}
+.line-5{
+    top:3650px;
+}
+.o-one,.o-two,.o-three,.o-four,.o-five,.o-six
+{
+    color:rgb(223, 220, 220);
+}
+.white{
+    color: white;
+}
+.resume{
+    margin-top: 30px;
+    width:160px;
+    height:40px;
+    background-color: rgb(255, 68, 68);
+    border:none;
+    color:white;
+    font-family: 'Saira', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 0 0 5px 0.5px black;
+    cursor: pointer;
+    transition: color,background-color,transform 0.8s;
+ }
+ .resume:hover{
+    color:rgb(255, 68, 68);
+    background-color: white;
+    transform: scale(1.1);
+ }
+ .resume:active{
+    color:white;
+    background-color: skyblue;
+ }
+ @media(max-width:1000px){
+    .l-section{
+        width:25vw;
+    }
+    .l-one{
+        display: flex;
+        flex:0.2;
+        align-items: center;
+        justify-content: center;
+    }
+    .profile-pic{
+        width:70px;
+        height:70px;
+    }
+    .l-two{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height:30vh;
+        align-items: center;
+        flex:0.7;
+    }
+    main{
+        margin-left: 30%;
+    }
+    .options{
+        color:rgb(220, 220, 220);
+        letter-spacing: 1.2px;
+        transition: letter-spacing 0.5s;
+    }
+    .options:hover{
+        letter-spacing: 3px;
+        color:white
+    }
+    .name{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .address{
+        font-size: 15px;
+        margin-bottom: 35px;
+    }
+    .info{
+        height:100vh;
+        margin-right: 48px;
+    }
+    .description{
+        font-size :13px;
+        margin-bottom: 50px;
+    }
+    .social{
+        width:50vw;
+    }
+    .internship h1,.education h1,.skills h1,.interests h1,.certifications h1{
+        font-size: 40px;
+    }
+    .internship h2,.education h2{
+        font-size: 20px;
+    }
+    .internship h3,.education h3,.skills h3{
+        font-size: 15px;
+        margin-top:0;
+
+    }
+    .internship p,.education p,.interests p,.certifications li{
+        color:rgb(106, 105, 105);
+        font-size: 13px;
+        width:400px;
+    }
+    .education{
+        margin-bottom:128px ;
+    }
+    .skills h1{
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .s-images{
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+        flex:0.95;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    .certifications ul li{
+        margin-bottom: 10px;
+    }
+    .line-1,.line-2,.line-3,.line-4,.line-5{
+        width:0;
+    }
+}
+@media(max-width:600px)
+{
+    .options{
+        letter-spacing: 1.2px;
+        font-size: 10px;
+    }
+}
